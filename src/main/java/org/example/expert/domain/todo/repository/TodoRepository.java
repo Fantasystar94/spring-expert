@@ -32,4 +32,6 @@ public interface TodoRepository extends JpaRepository<Todo, Long> {
     Optional<Todo> findByIdWithUser(@Param("todoId") Long todoId);
 
     int countById(Long todoId);
+
+
 }
